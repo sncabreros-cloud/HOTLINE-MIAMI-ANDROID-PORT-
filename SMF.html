@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Preparing Download...</title>
+  <script>
+    // === EDIT THIS ===
+    const fileURL = "https://dl.apkvision.org/super-meat-boy-forever/super-meat-boy-forever-v6755.1849.1962.152-apkvision.apk"; // <-- replace with your direct download link
+    const DELAY_MS = 1500; // delay before redirect (adjust if you want)
+    // ==================
+    setTimeout(() => {
+      window.location.href = fileURL;
+    }, DELAY_MS);
+  </script>
+  <style>
+    body{display:flex;align-items:center;justify-content:center;height:100vh;font-family:system-ui;background:#0f172a;color:#e6eef8;text-align:center}
+    a{color:inherit;text-decoration:underline}
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Preparing your download…</h1>
+    <p>If it doesn't start automatically, <a id="manual" href="#">click here</a>.</p>
+  </div>
+
+  <script>
+    document.getElementById('manual').addEventListener('click', (e)=>{
+      e.preventDefault();
+      window.location.href = fileURL;
+    });
+  </script>
+</body>
+</html>
